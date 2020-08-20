@@ -1,0 +1,90 @@
+<html lang="en" style="">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Component</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcdzZVI7Mku4C4X0FjNyvmC35pYiicqo8&amp;callback=initAutocomplete&amp;libraries=places&amp;v=weekly" defer=""></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/en_gb/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/en_gb/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/en_gb/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/en_gb/controls.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/en_gb/places_impl.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/en_gb/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/8/intl/en_gb/marker.js"></script></head>
+<body style="" class="modal-open">
+    <div class="mobile-wrapper">
+		<div class="mobile mobile-one">
+			<div class="header">
+				<div class="menu-toggle text-left">
+					<i class="fa fa-align-left"></i>
+                </div>
+                <div class="menu-logo text-center">
+					LOGO
+                </div>
+                <div class="menu-toggle text-right">
+					<i class="fa fa-align-left barlright"></i>
+				</div>
+            </div>
+            <div class="mobile__body">
+              <input id="pac-input" class="controls pac-target-input" type="text" placeholder="Canada Street 555" autocomplete="off">
+              <button type="button" class="btn custom-btn" data-toggle="modal" data-target="#myModal">
+                POST YOUR AD
+                </button>
+           <div id="map"></div>
+            </div>
+		</div>
+    </div>
+    <div><!-- The Modal -->
+        <div class="modal" id="myModal" class="modal-custom">
+          <div class="modal-dialog">
+            <div class="modal-content">
+  
+              <!-- Modal Header -->
+              <div class="modal-header header">
+                    <div class="menu-toggle text-left">
+                        <div class="close" data-dismiss="modal" aria-hidden="true"><!--?xml version="1.0"?-->
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 482.239 482.239" height="512px" viewBox="0 0 482.239 482.239" width="512px"><g><path d="m206.812 34.446-206.812 206.673 206.743 206.674 24.353-24.284-165.167-165.167h416.31v-34.445h-416.31l165.236-165.236z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E3E9ED"></path></g> </svg>
+                            </div>
+                    </div>
+                    <div class="menu-logo text-center">
+                        LOGO
+                    </div>
+                    <div class="menu-toggle text-right">
+                    </div>
+              </div>
+  
+              <!-- Modal body -->
+              <div class="modal-body">
+                  <div class="add-photo text-center">
+                      <img src="./assets/images/photograph.png" alt="">
+                      <p class="mt-2 mb-4 red-text">Add a Photo</p>
+                  </div>
+               <form action="#" id="myForm">
+                <div class="input_label_wrap">
+				<p id="success_msg" style="display:none; color:blue;">Selected location added successfully,You can add more Location or proceed with this location
+				by doing submit</p>
+                  <label class="label_custom">Property Address</label>
+                  <input id="addAddressInput" class="controls pac-target-input" type="text" placeholder="Canada Street 555" autocomplete="off">
+              </div>
+              <div class="input_label_wrap mt-4">
+                  <label class="label_custom">Property Title</label>
+                  <input id="propertyTitle" class="controls" type="text" placeholder="Canada Street 555">
+                  <div class="input_label_wrap mt-4">
+                      <label class="label_custom">Describe more about your property</label>
+                      <input id="desProperty" class="controls" type="text" placeholder="Enter any notes here">
+              </div>
+               </form>
+              </div>
+			   <div class="mobile__body">
+                 <button type="button" class="btn custom-btn" data-dismiss="modal">
+                Submit
+                </button>
+  
+            </div>
+            </div>
+          </div>
+        </div></div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./assets/js/custom.js"></script></body></html>

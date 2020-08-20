@@ -1,0 +1,273 @@
+.pac-container {
+    z-index: 1051 !important;
+  }
+  #map {
+    height: 100vh;
+  }
+/* Optional: Makes the sample page fill the window. */
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width:100%;
+}
+
+/* mobile view nav bar */
+.mobile-wrapper{
+	width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ALL MOBILES */
+a{
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: #fff;
+	font-weight: 200;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.mobile{
+    width: 100%;
+    height: 100vh;
+	background-color: #eee;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+}
+
+ .header{
+	background-color: #C6031E;
+	color: #fff;
+    padding: 10px;
+    border-radius: 0;
+}
+
+.line{
+	width: 30px;
+	height: 2px;
+	margin: 10px 0;
+	background-color: #fff;
+}
+
+.menu-toggle:hover{
+	cursor: pointer;
+}
+
+.mobile-nav ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+/* MOBILE ONE */
+
+.mobile-one{
+	background: #fff;
+}
+
+.mobile-one .mobile-nav{
+    background-color: #ffebee;
+	width: 100%;
+	height: 100%;
+	transform: translate(-100%, 0);
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    position: relative;
+    z-index: 99999;
+}
+button.custom-btn {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 999;
+    background-color: #C6031E;
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    padding: 7px 21px;
+    color: #fff;
+}
+button.custom-btn:hover, button.custom-btn:focus, button.custom-btn:active{
+    background-color: #C6031E;
+    border: 0;
+    outline: 0;   
+    box-shadow: 0 1px 5px rgba(0,0,0,0.7);
+}
+#pac-input {
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 12px 15px;
+    text-overflow: ellipsis;
+    width: 41%;
+    margin: 0 auto;
+    left: 0!important;
+    right: 0!important;
+    top: 10%!important;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+}
+#pac-input:focus{
+    border: 0;
+    outline: 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.7);
+}
+/* header style */
+.header {
+    display: flex;
+}
+.header > div{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.menu-logo {
+  font-weight: 600;
+  font-size: 18px;
+}
+.header .barlright {
+    background-color: #fff;
+    color: #C6031E;
+    padding: 2px;
+    border-radius: 2px;
+}
+/* modal style */
+.modal-dialog {
+    margin: 0;
+}
+.modal-content {
+    margin: 0!important;
+    border: 0;
+    border-radius: 0!important;
+    height: 100vh;
+    width: 100vw;
+}
+.wh-color{
+    color: #fff;
+}
+.modal-header .close {
+    padding: 0;
+    margin: 0;
+    float: left;
+    opacity: 1;
+}
+.modal-header i{
+    opacity: 1;
+}
+.modal-header.header .menu-toggle {
+    padding: 3px;
+}
+.add-photo img {
+    width: 55px;
+    margin: 0 auto;
+}
+.red-text{
+    color: #C6031E;
+    font-weight: 500;
+}
+.close svg {
+    opacity: 1;
+    width: 22px;
+    height: 18px;
+}
+.modal-body input {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 8px 0;
+    width: 100%;
+}
+.modal-body input:focus{
+
+    border: 0;
+    border-bottom: 1px solid #C6031E;
+    outline: 0;
+}
+label.label_custom {
+    font-weight: 600;
+}
+/* media query */
+@media screen and (min-width: 300px) and (max-width: 575px) {
+    #pac-input {
+        width: 90%;
+        padding: 9px;
+    }
+    
+}
